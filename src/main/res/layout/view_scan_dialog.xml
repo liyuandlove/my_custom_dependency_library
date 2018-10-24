@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="wrap_content">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dp_25"
+        android:paddingTop="@dimen/dp_50"
+        android:paddingRight="@dimen/dp_30"
+        android:paddingLeft="@dimen/dp_30"
+        android:gravity="center_horizontal"
+        android:background="@drawable/shape_toast_background"
+        android:orientation="vertical">
+        <TextView
+            android:id="@+id/hintTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/color_333333"
+            android:textSize="@dimen/sp_16"
+            android:gravity="center"
+            android:text="该包裹不属于你接的订单请检查编号是否正确！"/>
+        <Button
+            android:id="@+id/hintBottomBotton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/sp_16"
+            android:textStyle="bold"
+            android:minHeight="@dimen/dp_40"
+            android:layout_marginBottom="@dimen/dp_20"
+            android:layout_marginTop="@dimen/dp_20"
+            android:textColor="@android:color/white"
+            android:background="@drawable/selector_button_b38f62_r_5"
+            android:text="我知道了"/>
+    </LinearLayout>
+    <ImageView
+        android:layout_width="@dimen/dp_50"
+        android:layout_height="@dimen/dp_50"
+        android:scaleType="centerCrop"
+        android:src="@mipmap/icon_gantanhao_2"
+        android:layout_centerHorizontal="true"/>
+</RelativeLayout>

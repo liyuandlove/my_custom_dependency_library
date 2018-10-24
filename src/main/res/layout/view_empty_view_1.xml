@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center"
+    android:layout_gravity="center"
+   >
+    <ImageView
+        android:id="@+id/emptyIconIV"
+        android:layout_width="@dimen/dp_65"
+        android:layout_height="@dimen/dp_65"
+        android:src="@mipmap/icon_empty_2"/>
+    <TextView
+        android:id="@+id/emptyMessageTV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/sp_15"
+        android:textColor="@color/color_D8D8D8"
+        android:layout_marginTop="@dimen/dp_25"
+        android:text="我是空视图描述"/>
+</LinearLayout>

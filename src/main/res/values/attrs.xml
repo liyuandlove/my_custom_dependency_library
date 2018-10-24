@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="CustomSwipeRefreshLayout">
+        <attr name="topBackgroundColor" format="color"/>
+        <attr name="topTextColor" format="color"/>
+        <attr name="topProgressColor" format="color"/>
+        <attr name="bottomBackgroundColor" format="color"/>
+        <attr name="bottomTextColor" format="color"/>
+        <attr name="bottomProgressColor" format="color"/>
+        <attr name="canRefresh" format="boolean"/>
+        <attr name="canOnload" format="boolean"/>
+    </declare-styleable>
+    <!--
+        1、可以设置背景颜色；
+        2、可以设置左边图标；
+        3、可以设置右边图标；
+        4、可以设置右边文字；
+        5、可以设置右边文字颜色，大小；
+        6、可以设置标题文字颜色，大小；
+        7、可以设置左边图标、右边图标、右边文字是否显示；
+    -->
+    <declare-styleable name="TopBar">
+        <attr name="topBarBackgroundColor" format="color"/>
+        <attr name="topBarLeftIcon" format="integer"/>
+        <attr name="topBarRightIcon" format="integer"/>
+        <attr name="topBarRightText" format="string"/>
+        <attr name="topBarRightTextColor" format="color"/>
+        <attr name="topBarRightTextSize" format="dimension"/>
+        <attr name="topBarTitleTextColor" format="color"/>
+        <attr name="topBarTitleTextSize" format="dimension"/>
+        <attr name="topBarTitleText" format="string"/>
+        <attr name="topBarIsShowLeftIcon" format="boolean"/>
+        <attr name="topBarIsShowRightIcon" format="boolean"/>
+        <attr name="topBarIsShowRightText" format="boolean"/>
+        <attr name="topBarLeftIconSize" format="dimension"/>
+        <attr name="topBarRightIconSize" format="dimension"/>
+    </declare-styleable>
+
+
+    <declare-styleable name="StarGroupView">
+        <attr name="starNumber" format="integer"/>
+        <attr name="starEmptyBitmap" format="integer"/>
+        <attr name="starFullBitmap" format="integer"/>
+        <attr name="maxProgress" format="integer"/>
+        <attr name="progress" format="integer"/>
+        <attr name="starValue" format="float"/>
+        <attr name="starHeight" format="dimension"/>
+        <attr name="starWidth" format="dimension"/>
+        <attr name="starMargin" format="dimension"/>
+        <attr name="isShowHollow" format="boolean"/>
+        <attr name="isShowHalfStar" format="boolean"/>
+        <attr name="isOnlyInt" format="boolean"/>
+    </declare-styleable>
+
+    <declare-styleable name="ShadowViewGroup">
+        <attr name="shawdowColor" format="color"/>
+        <attr name="shawdowAlhpa" format="integer"/>
+        <attr name="isCricle" format="boolean"/>
+        <attr name="roundRadio" format="dimension"/>
+        <attr name="shawdowRadio" format="dimension"/>
+        <attr name="isFill" format="boolean"/>
+        <attr name="isShawdowColorChange" format="boolean"></attr>
+    </declare-styleable>
+
+    <declare-styleable name="CustomRelativeLayout">
+        <attr name="insideMarginRight" format="dimension"/>
+        <attr name="insideMarginBottom" format="dimension"/>
+    </declare-styleable>
+
+    <declare-styleable name="MoreFunListView">
+        <!--
+             TopIndex : 顶部视图的编号
+             Divider : 之间的间隔视图
+             TitleView : 标题视图，标题视图可以选择是否悬停
+             TopBackground : 头部背景视图，只放在头部的视图，可以设置是否背景暗色
+             titleIndex:标题的索引
+       -->
+        <!--<attr name="topIndex" format="integer"/>-->
+        <attr name="viewType">
+            <enum name="contentView" value="-1"/>
+            <enum name="titleView" value="1"/>
+            <enum name="topBackground" value="2"/>
+        </attr>
+        <attr name="titleIndex" format="integer"/>
+
+        <attr name="dividerId" format="integer"/>
+        <attr name="titleViewIsHover" format="boolean"/>
+        <attr name="topBackgroundDark" format="boolean"/>
+        <attr name="topPaddingNoBG" format="dimension"/>
+    </declare-styleable>
+
+    <declare-styleable name="YTImageView">
+        <attr name="isCricleIV" format="boolean"/>
+        <attr name="isRound" format="boolean"/>
+        <attr name="roundSize" format="dimension"/>
+        <attr name="roundTopLeft" format="dimension"/>
+        <attr name="roundTopRight" format="dimension"/>
+        <attr name="roundBottomLeft" format="dimension"/>
+        <attr name="roundBottomRight" format="dimension"/>
+    </declare-styleable>
+</resources>

@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.yutao.ytutils.ui.morefunlist.MoreFunSizeChangeViewGroup
+        android:id="@+id/topBackgroundContentRL"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:id="@+id/topBackgroundContentLL"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+        </LinearLayout>
+        <View
+            android:id="@+id/topBackgroundDarkView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@android:color/black"
+            android:alpha="0.5"/>
+    </com.yutao.ytutils.ui.morefunlist.MoreFunSizeChangeViewGroup>
+    <com.yutao.ytutils.ui.customswiperefresh.CustomSwipeRefreshLayout
+        android:id="@+id/moreFunRefreshLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:topTextColor="@android:color/white"
+        app:topBackgroundColor="@android:color/transparent">
+
+        <com.yutao.ytutils.ui.morefunlist.MoreFunRecycleView
+            android:id="@+id/moreFunRecycleView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:overScrollMode="never"/>
+
+    </com.yutao.ytutils.ui.customswiperefresh.CustomSwipeRefreshLayout>
+
+    <LinearLayout
+        android:id="@+id/moreFunTitleViewContentLL"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"></LinearLayout>
+
+</RelativeLayout>

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#008577</color>
+    <color name="colorPrimaryDark">#00574B</color>
+    <color name="colorAccent">#D81B60</color>
+
+    <color name="color_toast_icon_background">@android:color/black</color>
+    <color name="color_toast_message_text">@android:color/black</color>
+    <color name="color_toast_background">@android:color/white</color>
+
+    <color name="color_030303">#030303</color>
+    <color name="color_f7f7f7">#f7f7f7</color>
+    <color name="color_333333">#333333</color>
+    <color name="color_E6E6E6">#E6E6E6</color>
+    <color name="color_D8D8D8">#D8D8D8</color>
+    <color name="color_454545">#454545</color>
+    <color name="color_13233C">#13233C</color>
+    <color name="color_B38F62">#B38F62</color>
+    <color name="color_4D4D4D">#4D4D4D</color>
+    <color name="color_007AFF">#007AFF</color>
+    <color name="color_CCCCCC">#CCCCCC</color>
+</resources>

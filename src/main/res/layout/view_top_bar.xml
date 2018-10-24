@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:id="@+id/topBarContentLL"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:background="@android:color/white"
+    android:minHeight="@dimen/dp_47"
+    android:layout_height="wrap_content">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:layout_weight="1"
+        android:orientation="horizontal">
+        <ImageView
+            android:id="@+id/topBarLeftIV"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="@dimen/dp_10"
+            android:paddingRight="@dimen/dp_10"
+            android:minHeight="@dimen/dp_47"
+            android:layout_centerVertical="true"
+            android:scaleType="centerInside"
+            android:background="?android:attr/selectableItemBackground"
+            android:src="@mipmap/icon_left"/>
+        <TextView
+            android:id="@+id/topBarTitleTV"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:textColor="@color/color_030303"
+            android:textSize="@dimen/sp_17"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:text="我是标题"/>
+
+        <RelativeLayout
+            android:id="@+id/topBarRightRL"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="@dimen/dp_10"
+            android:paddingRight="@dimen/dp_10"
+            android:layout_centerVertical="true"
+            android:visibility="gone"
+            android:minHeight="@dimen/dp_47"
+            android:clickable="true"
+            android:background="?android:attr/selectableItemBackground"
+            android:layout_alignParentRight="true"
+            >
+            <TextView
+                android:id="@+id/topBarRightTV"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/sp_17"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/dp_10"
+                android:gravity="center_vertical|right"
+                android:visibility="visible"
+                android:textColor="@color/color_333333"
+                android:text="右边按钮"/>
+
+            <ImageView
+                android:id="@+id/topBarRightIV"
+                android:layout_width="@dimen/dp_25"
+                android:layout_height="@dimen/dp_25"
+                android:scaleType="centerCrop"
+                android:visibility="gone"
+                android:layout_centerInParent="true"
+                android:src="@mipmap/icon_scan_order"/>
+        </RelativeLayout>
+
+    </RelativeLayout>
+    <View
+        android:id="@+id/topBarDividerView"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_1"
+        android:background="@color/color_E6E6E6"/>
+</LinearLayout>
